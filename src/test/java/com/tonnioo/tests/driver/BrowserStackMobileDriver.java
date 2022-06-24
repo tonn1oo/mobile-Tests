@@ -20,15 +20,15 @@ public class BrowserStackMobileDriver implements WebDriverProvider {
         mutableCapabilities.setCapability("browserstack.key", "jnAJeVS1cPJthB2FQftg");
 
         // Set URL of the application under test
-//        mutableCapabilities.setCapability("app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");
-        mutableCapabilities.setCapability("app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");
+       /// mutableCapabilities.setCapability("app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");
+        mutableCapabilities.setCapability("app", "bs://cb2e35db18a0c9e24bba94bf70cba7e26a84b816");
 
         // Specify device and os_version for testing
         mutableCapabilities.setCapability("device", "Google Pixel 3");
         mutableCapabilities.setCapability("os_version", "9.0");
 
         // Set other BrowserStack capabilities
-        mutableCapabilities.setCapability("project", "QA.GURU lesson 12/21");
+        mutableCapabilities.setCapability("project", "tonnio");
         mutableCapabilities.setCapability("build", "browserstack-build-1");
         mutableCapabilities.setCapability("name", "selenide android test");
         return new RemoteWebDriver(getBrowserstackUrl(), mutableCapabilities);
